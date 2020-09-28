@@ -1,0 +1,18 @@
+springdoc:
+  version: '@springdoc.version@'
+  api-docs:
+    groups:
+      enabled: true
+  swagger-ui:
+    disable-swagger-default-url: true
+    path: /swagger-ui.html
+    display-request-duration: true
+    groups-order: DESC
+    operationsSorter: method
+  show-actuator: true
+  group-configs:
+    - group: default
+      packages-to-scan: com.example.first.controller
+spring:
+  main:
+    allow-bean-definition-overriding: true
